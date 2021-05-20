@@ -1,3 +1,5 @@
+// Example of how I work with matching API interfaces to typed interfaces within TypeScript. Only added properties from the API interfaces which I am working with
+
 export interface IApiImage {
     id: number;
     original_filename: string;

@@ -12,6 +12,7 @@ import noCats from './tim0.jpg';
 
 const CatList: React.FC = () => {
 
+    // Making use of component state for the majority of this, but would have liked to have moved this all to redux state.
     const emptyCatList: IApiImages[] = [];
     const [catList, setCatList] = useState(emptyCatList);
 

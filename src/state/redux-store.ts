@@ -1,6 +1,7 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import { reducer as toastrReducer } from 'react-redux-toastr';
 
+// Here I would add other redux state
 export const store = configureStore({
     reducer: {      
         toastr: toastrReducer

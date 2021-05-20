@@ -14,7 +14,6 @@ const Pagination: React.FC<IPaginationProps> = ({ currentPage, totalCount, onPag
     };
 
     const numberOfPages = Math.ceil(totalCount / pageSize);
-
     const pageControls: JSX.Element[] = [];
     
     for (var i = 1; i <= numberOfPages; i++){
@@ -24,9 +23,7 @@ const Pagination: React.FC<IPaginationProps> = ({ currentPage, totalCount, onPag
     return (
         <nav>
             <ul className="pagination pagination-lg justify-content-center">
-                {
-                    pageControls.map(x => x)
-                }
+                { pageControls.map(x => x) }
             </ul>
         </nav>        
     )

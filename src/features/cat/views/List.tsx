@@ -29,6 +29,7 @@ const CatList: React.FC = () => {
     const getMyCats = (page: number) => {
         CatService.getMyCats(page).then((response: AxiosResponse<IApiImages[]>) => {
             const totalCount = Number(response.headers['pagination-count']);
+
             setTotalCount(totalCount);
             setCatList(response.data);
             setCatListLoaded(true);
@@ -96,11 +97,13 @@ const CatList: React.FC = () => {
                                 });
                             },
                             onVoteDown: (voteId: number, currentValue: number) => {
+
                                 CatService.vote(voteId, currentValue - 1).then(() => {
                                     getVotes();
                                 });
                             },
                             onVoteUp: (id: number, currentValue: number) => {
+
                                 CatService.vote(id, currentValue + 1).then(() => {
                                     getVotes();
                                 });

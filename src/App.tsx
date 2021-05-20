@@ -23,9 +23,7 @@ const App: React.FC = () => {
                         <div className="row align-items-center">
                             <div className="col-4 col-md-6">
                                 <h1 className="mb-0">
-                                    <a href="/" className="text-white h2 mb-0">
-                                        Felines
-                                    </a>
+                                    <NavLink to="">Felines</NavLink>
                                 </h1>
                             </div>
                             <div className="col-8 col-md-6">

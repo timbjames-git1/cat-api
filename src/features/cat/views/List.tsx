@@ -1,5 +1,6 @@
 import { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { IListDisplayProps, ListDisplay } from '../components/ListDisplay';
 import { IPaginationProps, Pagination } from '../components/Pagination';
@@ -122,7 +123,7 @@ const CatList: React.FC = () => {
                 {
                     (!hasCats && catListLoaded) && (
                         <div className="col col-12 col-md-8 col-lg-6 text-center">
-                            <h3>Seems like you don't currently own any cats. Please click on <a href="/upload">"Upload"</a> to start uploading your favorite cat pictures.</h3>
+                            <h3>Seems like you don't currently own any cats. Please click on <NavLink to="upload">Upload</NavLink> to start uploading your favorite cat pictures.</h3>
                             <img alt="No cats found" src={noCats} />
                         </div>
                     )

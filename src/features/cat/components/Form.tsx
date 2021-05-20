@@ -38,12 +38,12 @@ const Form: React.FC = () => {
         <form>
             <div className="form-group">
                 <label>Your Cat Picture</label>
-                <input type="file" className="form-control" placeholder="Enter email" ref={(component: HTMLInputElement) => { fileInput = component }} />
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                <input type="file" className="form-control" ref={(component: HTMLInputElement) => { fileInput = component }} />
+                <small className="form-text text-muted">Images must be either .jpg or .png</small>
             </div>                
             
             <div className="form-group">
-                <button type="button" className="btn btn-primary" onClick={handleUpload}>Upload</button>
+                <button type="button" className="btn btn-primary" onClick={handleUpload}>Upload Picture</button>
             </div>
 
             {

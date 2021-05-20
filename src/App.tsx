@@ -45,12 +45,10 @@ const App: React.FC = () => {
                 </header>
 
                 <div className="container-fluid">
-
                     <Switch>                    
                         <Route path="/upload" component={UploadView} />       
                         <Route path="/" component={CatList} />
                     </Switch>
-
                 </div>
 
                 <div className="footer py-4">
@@ -68,7 +66,13 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                <ReduxToastr timeOut={3000} preventDuplicates position="top-left" transitionIn="fadeIn" transitionOut="fadeOut" closeOnToastrClick progressBar />
+                <ReduxToastr 
+                    timeOut={3000} 
+                    preventDuplicates 
+                    position="top-left" 
+                    transitionIn="fadeIn" 
+                    transitionOut="fadeOut" 
+                    closeOnToastrClick progressBar />
 
             </div>
         </Provider>        

@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 const routerProps: BrowserRouterProps = { };
 
+// Example of production environment variables
 if (process.env.NODE_ENV === 'production'){
     routerProps.basename = process.env.PUBLIC_URL;
 }

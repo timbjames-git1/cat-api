@@ -28,7 +28,7 @@ const ListDisplay: React.FC<IListDisplayProps> = ({ onFavourite, onVoteDown, onV
     };
 
     return (
-        <div className="image-wrap-2">            
+        <div className="image-wrap-2" id={imgId.toString()}>            
             <div className="image-favorite">
                 <button className="btn btn-outline-white py-2 px-4" onClick={handleFavorite}>
                     { isFavorite ? <HeartFillIcon /> : <HeartIcon /> }

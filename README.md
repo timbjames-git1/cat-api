@@ -15,7 +15,7 @@ Alternatively you can clone the repository, then in the project directory, you c
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### 'npm test`
+### `npm test`
 
 I have added some basic tests just to see what can be done. Open a command window within the folder, then run the command.
 

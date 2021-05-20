@@ -16,10 +16,6 @@ class CatService {
         return http.get(`/favourites?sub_id=${this.subId}`);
     }
 
-    public getCats = (): Promise<AxiosResponse<IApiImages[]>> => {
-        return http.get('/images/search?limit=10&page=1&size=500');
-    }
-
     public getMyCats = (currentPage: number): Promise<AxiosResponse<IApiImages[]>> => {
         return http.get(`/images?limit=${this.pageSize}&page=${currentPage - 1}&sub_id=${this.subId}`);
     }

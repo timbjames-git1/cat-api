@@ -19,3 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 I have added some basic tests just to see what can be done. Open a command window within the folder, then run the command.
 
+### Testing
+
